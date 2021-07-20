@@ -57,17 +57,17 @@ const usStates = [
   { name: 'WASHINGTON', abbreviation: 'WA' },
   { name: 'WEST VIRGINIA', abbreviation: 'WV' },
   { name: 'WISCONSIN', abbreviation: 'WI' },
-  { name: 'WYOMING', abbreviation: 'WY' }
-]
+  { name: 'WYOMING', abbreviation: 'WY' },
+];
 
-function nameToAbbr (stateName) {
+function nameToAbbr(stateName) {
   const idx = usStates.findIndex(function (state) {
-    return state.name === stateName.toUpperCase()
-  })
+    return state.name === stateName.toUpperCase();
+  });
 
   if (idx === -1) {
-    return null
+    return null;
   }
 
-  return usStates[idx].abbreviation
+  return usStates[idx].abbreviation;
 }
