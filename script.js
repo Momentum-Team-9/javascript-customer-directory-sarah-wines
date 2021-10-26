@@ -1,5 +1,6 @@
 console.log(customers);
 const outputDiv = document.getElementById('root');
+
 for (customer of customers) {
   const customerCard = document.createElement('div');
 
